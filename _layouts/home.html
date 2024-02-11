@@ -9,6 +9,10 @@
     </div>
 
     <div class="my-6">
+      {% include aboutme.html %}
+    </div>
+
+    <div class="my-6">
       {% include projects.html %}
     </div>
 
@@ -37,7 +41,9 @@
             {{ content }}
           </div>
         {% endunless %}
-
+        
+        {% include aboutme.html %}
+        
         {% include projects.html %}
 
         {% if site.topics %}
